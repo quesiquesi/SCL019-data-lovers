@@ -1,0 +1,16 @@
+header{
+font-family: 'Oswald', sans-serif;;
+}
+
+h1{
+color: #1d4355;
+}
+
+body{
+
+background-image: url("fotofondo.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
