@@ -8,19 +8,19 @@ header{
 font-family: 'Carter One', fantasy;
 }
 
+.imghoja{
+  position:absolute; top:100px; right: 1000px;
+}
+
+
+
 .btnvaloracion{
-  text-decoration: none;
-  color:rgb(172, 159, 159);
-  background-color: transparent;
-  border: 3px rgb(8, 8, 8);
-  border-radius: 5px;
-  padding: 1rem;
-  transition: background-color;
-  background-image: url(./img/hoja.png);
+  position:absolute; top:100px; right:1200px;
  
 }
 .btndirectores{
     background-image: url();
+    position:absolute; top:100px; right:1000px;
 }
 
 
@@ -31,9 +31,11 @@ text-align: center;
 
 body{
 
-background-image: url("./img/fondito.jpg");
-background-position: center;
+background-image: url("./img/fotofondo.jpg");
+background-position: center center;
 background-repeat: no-repeat;
 background-attachment: fixed;
-background-size: cover;
+background-size: contain;
+background-color: #f2f1ec;
+
 }
