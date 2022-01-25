@@ -30,7 +30,7 @@ text-align: center;
 
 body{
 
-background-image: url("fotofondo.jpg");
+background-image: url("./img/fotofondo.jpg");
 background-position: center;
 background-repeat: no-repeat;
 background-attachment: fixed;
