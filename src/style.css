@@ -1,9 +1,31 @@
-header{
-font-family: 'Oswald', sans-serif;;
+@font-face {
+font-family:'Carter One' ;
+src: url(https://fonts.googleapis.com/css2?family=Carter+One&display=swap);
 }
 
+
+header{
+font-family: 'Carter One', fantasy;
+}
+
+.btnvaloracion{
+  text-decoration: none;
+  color:rgb(172, 159, 159);
+  background-color: transparent;
+  border: 3px rgb(8, 8, 8);
+  border-radius: 5px;
+  padding: 1rem;
+  transition: background-color;
+ 
+}
+.btndirectores{
+    background-image: url();
+}
+
+
 h1{
-color: #1d4355;
+color: #f15d5d;
+text-align: center;
 }
 
 body{
