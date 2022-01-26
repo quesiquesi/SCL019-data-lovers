@@ -11,6 +11,7 @@ font-family: 'Carter One', fantasy;
 .imghoja{
   position:absolute; top:100px; right: 1000px;
 }
+<<<<<<< HEAD
 
 nav{
     background-image:url(./img/hoja.png);
@@ -20,6 +21,18 @@ nav{
     
     position:absolute; top:100px; right:1200px;
    
+=======
+button{
+  background-color:transparent;
+  outline: none;
+  border:none;
+}
+
+.btnvaloracion{
+  position:absolute; top:100px; right:1200px;
+  color:#f3eac0;
+ 
+>>>>>>> 58e1a9aee8d89f61775467da8ec70542e6116d0c
 }
 .btndirectores{
     background-image: url();
@@ -28,8 +41,21 @@ nav{
 }
 .buscador{
     position: absolute; top: 100px; right: 200px;
+    color:#f3eac0;
+    
 }
-
+.input-icon {
+  color: #b4adad;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btnbuscar{
+  position:absolute; top: 100px; right: 130px;
+}
 
 h1{
 color: #f15d5d;
@@ -39,10 +65,14 @@ text-align: center;
 body{
 
 background-image: url("./img/fotofondo.jpg");
-background-position: center center;
+background-position: center;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: contain;
 background-color: #f2f1ec;
 
+}
+
+.btnayuda{
+  position:absolute; bottom: 100px; right:80px;
 }
