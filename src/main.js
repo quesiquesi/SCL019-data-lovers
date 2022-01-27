@@ -1,6 +1,15 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+//import { example } from './data.js';
+import data from './data/ghibli/ghibli.js';
+const dataghibli = data.films
+document.getElementById("filterdirector").addEventListener("click",()=>{
 
-console.log(example, data);
+
+  for(let i = 0; i<dataghibli.length; i++){
+      console.log(dataghibli[i].id);
+  }
+
+   // console.log(data.films);
+
+})
+
+
