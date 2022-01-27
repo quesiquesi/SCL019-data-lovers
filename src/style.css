@@ -11,17 +11,6 @@ font-family: 'Carter One', fantasy;
 .imghoja{
   position:absolute; top:100px; right: 1000px;
 }
-<<<<<<< HEAD
-
-nav{
-    background-image:url(./img/hoja.png);
-}
-
-.btnvaloracion{
-    
-    position:absolute; top:100px; right:1200px;
-   
-=======
 button{
   background-color:transparent;
   outline: none;
@@ -32,7 +21,6 @@ button{
   position:absolute; top:100px; right:1200px;
   color:#f3eac0;
  
->>>>>>> 58e1a9aee8d89f61775467da8ec70542e6116d0c
 }
 .btndirectores{
     background-image: url();
