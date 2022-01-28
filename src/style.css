@@ -11,6 +11,7 @@ font-family: 'Carter One', fantasy;
 .imghoja{
   position:absolute; top:100px; right: 1000px;
 }
+
 button{
   background-color:transparent;
   outline: none;
@@ -29,14 +30,21 @@ select{
   color:#f3eac0;
   display: inline-block;
  
+
 }
 .btndirectores{
     background-image: url();
     position:absolute; top:100px; right:1000px;
+
     display: inline-block;
+<<<<<<< HEAD
 } */
 input{
   background-color: #f3eac0
+=======
+
+   
+>>>>>>> 2605b0c76db3cfaa7e7182b4b2cdacee79d8b4fc
 }
 .buscador{
     position: absolute; top: 100px; right: 200px;
