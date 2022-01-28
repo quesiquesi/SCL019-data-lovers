@@ -17,8 +17,15 @@ button{
   outline: none;
   border:none;
 }
+select{
+  background-color:#f3eac0
+}
+#filterdirector{
+  position: absolute; top:100px; right:1200px;
 
-.btnvaloracion{
+}
+
+/* .btnvaloracion{
   position: absolute; top:100px; right:1200px;
   color:#f3eac0;
   display: inline-block;
@@ -30,12 +37,18 @@ button{
     position:absolute; top:100px; right:1000px;
 
     display: inline-block;
+<<<<<<< HEAD
+} */
+input{
+  background-color: #f3eac0
+=======
 
    
+>>>>>>> 2605b0c76db3cfaa7e7182b4b2cdacee79d8b4fc
 }
 .buscador{
     position: absolute; top: 100px; right: 200px;
-    color:#f3eac0;
+    color:#d0bdcd;
     display: inline-block;
     
 }
