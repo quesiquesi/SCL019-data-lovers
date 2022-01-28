@@ -5,7 +5,7 @@ document.getElementById("filterdirector").addEventListener("click",()=>{
 
 
   for(let i = 0; i<dataghibli.length; i++){
-      console.log(dataghibli[i].id);
+      console.log(dataghibli[i].director);
   }
 
    // console.log(data.films);
