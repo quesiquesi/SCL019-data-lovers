@@ -3,7 +3,6 @@ font-family:'Carter One' ;
 src: url(https://fonts.googleapis.com/css2?family=Carter+One&display=swap);
 }
 
-
 header{
 font-family: 'Carter One', fantasy;
 }
@@ -18,18 +17,23 @@ button{
 }
 
 .btnvaloracion{
-  position:absolute; top:100px; right:1200px;
+  position: absolute; top:100px; right:1200px;
   color:#f3eac0;
+  display: inline-block;
  
 }
 .btndirectores{
     background-image: url();
     position:absolute; top:100px; right:1000px;
+
+    display: inline-block;
+
    
 }
 .buscador{
     position: absolute; top: 100px; right: 200px;
     color:#f3eac0;
+    display: inline-block;
     
 }
 .input-icon {
@@ -43,6 +47,7 @@ button{
 }
 .btnbuscar{
   position:absolute; top: 100px; right: 130px;
+  display: inline-block;
 }
 
 h1{
@@ -63,4 +68,5 @@ background-color: #f2f1ec;
 
 .btnayuda{
   position:absolute; bottom: 100px; right:80px;
+  display: inline-block;
 }
