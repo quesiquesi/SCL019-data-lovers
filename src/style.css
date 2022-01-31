@@ -40,8 +40,13 @@ img{
   padding-top:100px;
   padding-bottom:15px;
   padding-right:15px;
+<<<<<<< HEAD
   width:250px;
   height:350px;
+=======
+  width:160px;
+  height:300px;
+>>>>>>> ed9c5d1cb980dbaf9de934f903b50431dbf60ad9
 }
 .fichita{
   border: none;
