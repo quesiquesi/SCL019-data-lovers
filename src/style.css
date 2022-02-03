@@ -1,22 +1,23 @@
 @font-face {
-font-family:'Carter One' ;
-src: url(https://fonts.googleapis.com/css2?family=Carter+One&display=swap);
+font-family:'Lobster'; 
+src: url(https://fonts.googleapis.com/css2?family=Lobster&display=swap);
 }
 
 header{
 font-family: 'Carter One', fantasy;
 }
 
-.imghoja{
-  position:absolute; top:100px; right: 1000px;
-}
+
 button{
   background-color:transparent;
   outline: none;
   border:none;
+  
 }
 select{
-  background-color:#f3eac0
+  background-color:#fdf2b0;
+  border-radius:10px;
+  padding:3px;
 }
 #filterdirector{
   position: absolute; top:100px; right:1200px;
@@ -35,17 +36,19 @@ position: absolute; top:100px; right: 1400px;
   border-image:30px;
   display: flex;
   flex-wrap: wrap; 
- column-gap: 20px;
+  column-gap:30px;
+ 
   align-items: center;
   
 
-/* img{
-  padding-top:100px;
-  padding-bottom:15px;
-  padding-right:15px;
-  width:160px;
-  height:300px; */
+ }
+
+img{
+ 
+  width:230px;
+  height:300px;
 }
+
 .fichita{
   border: none;
   display:flex;
@@ -54,30 +57,22 @@ position: absolute; top:100px; right: 1400px;
   align-items: center;
   justify-content: center;
   text-align:end;
- padding: 30px 30px 30px 30px;
-
+  padding: 30px 30px 30px;
   border-radius: 10px;
-  background-color: rgba(164, 195, 178, 0.8)
+  background-color: rgba(209, 242, 249, 0.8)
 }
-/* .btnvaloracion{
-  position: absolute; top:100px; right:1200px;
-  color:#f3eac0;
-  display: inline-block;
- 
-}
-.btndirectores{
-    background-image: url();
-    position:absolute; top:100px; right:1000px;
 
-    display: inline-block;
-} */
 input{
-  background-color: #f3eac0
+  background-color: #fdf2b0;
+  border-radius: 10px;
+  padding: 3px;
 }
+
 .buscador{
     position: absolute; top: 100px; right: 200px;
     color:#d0bdcd;
     display: inline-block;
+    border-radius: 10px;
     
 }
 .input-icon {
@@ -97,22 +92,25 @@ input{
 h1{
 color: #f15d5d;
 text-align: center;
+font-family:'Lobster-Regular', cursive;
+
+
 }
 
 body{
 
-background-image: url("./img/fotofondo.jpg");
+background-image: url("https://i.pinimg.com/originals/51/81/a3/5181a33c0955dee17b6e5752c09b9a3c.jpg");
 background-position: center;
 background-repeat: no-repeat;
 background-attachment: fixed;
-background-size: contain;
+background-size: cover;
 background-color: #f2f1ec;
 
 }
 #tarjeta{
-  
+
  font-size: 20px;
- 
+ font-family: Verdana, sans-serif;
  
 }
 
