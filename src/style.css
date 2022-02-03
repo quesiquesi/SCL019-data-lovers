@@ -23,6 +23,10 @@ select{
   position: absolute; top:100px; right:1200px;
 
 }
+#filterScore{
+
+position: absolute; top:100px; right: 1400px;
+}
 #poster{
  flex-direction: row;
   row-gap: 30px;
@@ -115,4 +119,9 @@ background-color: #f2f1ec;
 /*.btnayuda{
   position:absolute; bottom: 100px; right:80px;
   display: inline-block;
+}
+
+text{
+
+  font-size: 30px;
 }
