@@ -1,18 +1,17 @@
 //import { example } from './data.js';
 
-import { filterDirectorGhibli } from './data.js';
+import { filterDirectorGhibli, sortData } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
-const dataghibli = data.films
-
-
+let dataghibli = data.films
 
 const containerposter = document.getElementById("poster")
 
+//------ELEMENTOS DE LA PÁGINA--------
 
 const card = (dataghibli) => {
 
-  containerposter.innerHTML = ''; 
+  containerposter.innerHTML = '';
 
   for (let i = 0; i < dataghibli.length; i++) {
 
@@ -21,49 +20,109 @@ const card = (dataghibli) => {
     let imagen = document.createElement("img");
     let nombre = document.createElement("p");
 
-
+    ficha.setAttribute("class", "fichita")
     imagen.setAttribute("src", dataghibli[i].poster);
     nombre.setAttribute("id", "tarjeta");
-    ficha.setAttribute("class", "fichita")
+
     nombre.innerHTML = dataghibli[i].title;
 
     ficha.appendChild(imagen);
     containerposter.appendChild(ficha);
     ficha.appendChild(nombre)
-    //poster.appendChild (leyenda)
+
 
 
   }
 
 }
 
-const selectDirectores = document.getElementById('filterdirector');                 //se crea var, que llame desde el select creado, select que tiene 2 opciones
+//------EVENTO FILTRO DIRECTORES--------
 
- selectDirectores.addEventListener('change', () => {                                        // evento que se dispara y usa los datos ligados a la opcion dando respuesta segun seleccion y que realice la sgte funcion 
-  var opcionDirector = selectDirectores.options[selectDirectores.selectedIndex].value;     // se crea var que tome las opciones desde la const aletasfiltro y segun  el valor seleccionado (F-M)
+const selectDirectores = document.getElementById('filterdirector');
+
+selectDirectores.addEventListener('change', () => {
+  var opcionDirector = selectDirectores.options[selectDirectores.selectedIndex].value;
   console.log(opcionDirector)
 
-  let resultado = filterDirectorGhibli(dataghibli, opcionDirector)                              // se crea var resultado que tiliza la f de filtrar en los parametrso de la data y el valor de var creada em L41
-  card(resultado)                                                                  // se usa la funcion card para que nos cree el formado de var resultados 
+  let resultado = filterDirectorGhibli(dataghibli, opcionDirector)
+  card(resultado)
   console.log(resultado)
 
-}) 
+})
+
+//--------EVENTO ORDENAR POR SCORE---------
+
+const selectScore = document.getElementById('filterScore');
+
+selectScore.addEventListener('change', () => {
+  var opcionScore = selectScore.options[selectScore.selectedIndex].value;
+  let order= sortData(dataghibli,opcionScore)
+  console.log(order)
+  //console.log(order.reverse())
 
 
- window.addEventListener('load',()=>{                     // Evento que al abrir nuestra pagina aparezcan las card(tarjetas con nombre de atletas)
+})
+//console.log(selectScore)
+
+
+
+
+window.addEventListener('load', () => {
   card(dataghibli)
 })
- 
 
-for (let i = 0; i < dataghibli.length; i++) {
+
+
+
+
+//function OrdenarScore() {
   
-  let FilterScore = dataghibli[i].rt_score
+  /* let nuevoArray = [];
   
-  console.log(FilterScore);
-  
-  
- 
-}
+  for (let i = 0; i < dataghibli.length; i++) {
+
+    let FilterScore = [dataghibli[i].rt_score]
+    //console.log(FilterScore);
+    var numero = FilterScore.map(i => Number(i));
+    console.log(numero);
+    var ArrayenString = numero.toString()
+    console.log(ArrayenString);
+
+    nuevoArray.push(dataghibli[i].rt_score);
+    
+  }
+  console.log(nuevoArray); */
+//}
+
+
+
+
+
+
+
+
+
+/* function ordenarScore(numero) {
+
+    for (let i = 0; i < numero.length - 1; i++) {
+
+      for (let j = 0; j < numero.length - i - 1; j++) {
+
+        if (numero[j] > numero[j + 1]) {
+
+          [numero[j], numero[j + 1]] = [numero[j + 1], numero[j]];          //ALGORITMO BURBUJA PARA ORDENAR UN ARRAY NUMÉRICO
+        }
+      }
+    }
+  }
+
+  let algoritmoBurbuja = ordenarScore(numero)
+  console.log(algoritmoBurbuja); */
+
+
+
+
+
 
 /* 
 for(let i=0;i<dataghibli.length;i++){

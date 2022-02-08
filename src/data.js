@@ -1,9 +1,38 @@
-export const filterDirectorGhibli = (dataghibli, valor) =>{                                               // se crea la const filtrarm y funcion con 2 parametros 
+
+//------FUNCIÓN PARA FILTRAR POR DIRECTOR------
+
+export const filterDirectorGhibli = (dataghibli, valor) =>{  
+  
+  
   const DirectoresGhibli= dataghibli.filter( directorGhibli=>(directorGhibli.director===valor ));
   console.log(DirectoresGhibli);
-  return DirectoresGhibli;                                                                // que la funcion nos devuelva lo pedido en la var mujeresMedallistas
+  return DirectoresGhibli;                                                               
   
+
 }; 
+
+//------FUNCIÓN PARA ORDENAR DATA POR SCORE-------
+
+export const sortData= (dataghibli, valor) =>{  
+
+  //const orderScore= []
+
+  let orderDataScore = dataghibli.sort(function (a, b) {
+
+    if (parseInt(a.rt_score, 10) > parseInt(b.rt_score, 10)) {
+      return 1;
+    }
+    if (parseInt(a.rt_score, 10) < parseInt(b.rt_score, 10)) {
+      return -1;
+    }
+    return 0;
+    });
+    return orderDataScore
+     
+  }
+  
+
+
 
 /* let pelishayao = dataghibli.filter(pelicula=> pelicula.director== "Hayao Miyazaki")
 console.log(pelishayao); */
