@@ -13,9 +13,9 @@ export const filterDirectorGhibli = (dataghibli, valor) =>{
 
 //------FUNCIÓN PARA ORDENAR DATA POR SCORE-------
 
-export const sortData= (dataghibli, valor) =>{  
+export const sortData= (dataghibli) =>{  
 
-  //const orderScore= []
+  //const orderDataScore= []
 
   let orderDataScore = dataghibli.sort(function (a, b) {
 
@@ -27,11 +27,12 @@ export const sortData= (dataghibli, valor) =>{
     }
     return 0;
     });
-    return orderDataScore
-     
+    
+    return  orderDataScore
+    
   }
   
-
+  console.log(sortData)
 
 
 /* let pelishayao = dataghibli.filter(pelicula=> pelicula.director== "Hayao Miyazaki")
