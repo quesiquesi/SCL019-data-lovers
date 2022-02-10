@@ -1,13 +1,13 @@
-@font-face {
-font-family:'Lobster'; 
-src: url(https://fonts.googleapis.com/css2?family=Lobster&display=swap);
-}
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&display=swap');
 
 header{
 font-family: 'Carter One', fantasy;
 }
 
-
+p{
+  font-family: "Acme",sans-serif;
+  font-size: 20px;
+}
 button{
   background-color:transparent;
   outline: none;
@@ -92,8 +92,8 @@ input{
 h1{
 color: #f15d5d;
 text-align: center;
-font-family:'Lobster-Regular', cursive;
-
+font-family:'Lobster', cursive;
+font-size: 100 px;
 
 }
 
@@ -107,12 +107,7 @@ background-size: cover;
 background-color: #f2f1ec;
 
 }
-#tarjeta{
 
- font-size: 20px;
- font-family: Verdana, sans-serif;
- 
-}
 
 
 

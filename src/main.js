@@ -7,11 +7,15 @@ let dataghibli = data.films
 
 const containerposter = document.getElementById("poster")
 
+//-----LIMPIAR PÁGINA-----
+const limpiarPagina = ()=>{
+  containerposter.innerHTML = '';
+}
 //------ELEMENTOS DE LA PÁGINA--------
 
 const card = (dataghibli) => {
 
-  containerposter.innerHTML = '';
+  limpiarPagina ()
 
   for (let i = 0; i < dataghibli.length; i++) {
 
@@ -19,16 +23,18 @@ const card = (dataghibli) => {
     let ficha = document.createElement("div");
     let imagen = document.createElement("img");
     let nombre = document.createElement("p");
+    let puntaje = document.createElement("p");
 
     ficha.setAttribute("class", "fichita")
     imagen.setAttribute("src", dataghibli[i].poster);
     nombre.setAttribute("id", "tarjeta");
-
+    puntaje.innerHTML = "Valoración RT: " + dataghibli[i].rt_score;
     nombre.innerHTML = dataghibli[i].title;
 
     ficha.appendChild(imagen);
     containerposter.appendChild(ficha);
     ficha.appendChild(nombre)
+    ficha.appendChild(puntaje)
 
 
 
@@ -56,9 +62,17 @@ const selectScore = document.getElementById('filterScore');
 
 selectScore.addEventListener('change', () => {
   var opcionScore = selectScore.options[selectScore.selectedIndex].value;
-  let order= sortData(dataghibli,opcionScore)
-  console.log(order)
-  //console.log(order.reverse())
+  let sorted = sortData(dataghibli,opcionScore)
+  
+  if(opcionScore ==="ascendente"){
+    card(sorted);
+  } 
+  else if(opcionScore ==="descendente"){
+    card(sorted.reverse());
+
+  }
+  //let orderRverse = order.reverse()
+  //console.log(orderRverse)
 
 
 })
