@@ -1,14 +1,30 @@
-// estas funciones son de ejemplo
-/* 
-export const example = () => {
-  return 'example';
-};
+//------FUNCIÓN PARA FILTRAR POR DIRECTOR------
 
-export const anotherExample = () => {
-  return 'OMG';
-}; */
+export const filterDirectorGhibli = (dataghibli, valor) =>{  
+  
+  
+  const DirectoresGhibli= dataghibli.filter( directorGhibli=>(directorGhibli.director===valor ));
+  console.log(DirectoresGhibli);
+  return DirectoresGhibli;                                                               
+  
 
-export const filtrodirector = (data, valor) =>{
-const directoresghibli = data.filter(eldirector =>(eldirector.director===valor))
-return directoresghibli
-}
+}; 
+
+//------FUNCIÓN PARA ORDENAR DATA POR SCORE-------
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+

@@ -1,86 +1,91 @@
-import { filtrodirector } from './data.js' 
+import { filterDirectorGhibli, sortData } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
+let dataghibli = data.films
 
-const dataghibli = data.films 
+const containerposter = document.getElementById("poster")
 
- const containerposter = document.getElementById("poster")
+ const limpiarpagina = () =>{
+  containerposter.innerHTML = '';
+}
+   
 
-  const displaydata = (dataghibli) =>{  
+//------ELEMENTOS DE LA PÁGINA--------
 
-    poster.innerHTML = ''
-  
-     for(let i=0;i<dataghibli.length;i++){
-                        
-            
-       let ficha = document.createElement ("div");
-       let imagen = document.createElement("img");
-       let nombre = document.createElement("p");
+const card = (dataghibli) => {
 
-            
-        imagen.setAttribute("src",dataghibli[i].poster);
-        nombre.setAttribute("id", "tarjeta");
-        ficha.setAttribute ("class", "fichita")
-        nombre.innerHTML = dataghibli[i].title;
+  limpiarpagina()
 
-       ficha.appendChild (imagen);
-       containerposter.appendChild(ficha);
-       ficha.appendChild (nombre)
-       
-      }  
-      }  
-    
-       
-      window.addEventListener('load',()=>{
-         displaydata(dataghibli)
-       })
+  for (let i = 0; i < dataghibli.length; i++) {
 
-        
- 
-//filtro según director que se muestre en html
 
-/* const filtroghibli = document.getElementById('filterdirector');                 //se crea var, que llame desde el select creado, select que tiene 2 opciones
- 
-filtroghibli.addEventListener('change',()=>{                                        // evento que se dispara y usa los datos ligados a la opcion dando respuesta segun seleccion y que realice la sgte funcion 
-    var selectedirector = filtroghibli.options[filtroghibli.selectedIndex].value;     // se crea var que tome las opciones desde la const aletasfiltro y segun  el valor seleccionado (F-M)
-    console.log(selectedirector)
+    let ficha = document.createElement("div");
+    let imagen = document.createElement("img");
+    let nombre = document.createElement("p");
+    let puntaje = document.createElement("p")
 
-    let resultado = filtrodirector(directores,selectdirector)                              // se crea var resultado que tiliza la f de filtrar en los parametrso de la data y el valor de var creada em L41
-    displaydata(resultado)                                                                  // se usa la funcion card para que nos cree el formado de var resultados 
-    console.log(resultado)
+    ficha.setAttribute("class", "fichita")
+    imagen.setAttribute("src", dataghibli[i].poster);
+    nombre.setAttribute("id", "tarjeta");
+
+    puntaje.innerHTML = 'Valoración RT: ' + dataghibli[i].rt_score;
+    nombre.innerHTML =  dataghibli[i].title;
+
+    ficha.appendChild(imagen);
+    containerposter.appendChild(ficha);
+    ficha.appendChild(nombre)
+    ficha.appendChild(puntaje)
 
 
 
+  }
+
+}
+
+//------EVENTO FILTRO DIRECTORES--------
+
+const selectDirectores = document.getElementById('filterdirector');
+
+selectDirectores.addEventListener('change', () => {
+  var opcionDirector = selectDirectores.options[selectDirectores.selectedIndex].value;
+  console.log(opcionDirector)
+
+  let resultado = filterDirectorGhibli(dataghibli, opcionDirector)
+  card(resultado)
+  console.log(resultado)
+
+})
+
+//--------EVENTO ORDENAR POR SCORE---------
+
+
+
+
+
+
+
+
+/* const selectScore = document.getElementById ('filterScore');
+
+selectScore.addEventListener ('change', ()=>{
+  var opcionScore = selectScore.options[selectScore.selectedIndex].value;
+  let sorted = sortData (dataghibli,opcionScore)
+  if(opcionScore === 'ascendente'){
+    card(sorted)
+  }
+  else if(opcionScore === 'descendente'){
+    card(sorted.reverse())
+  }
+})
 
  */
+  
 
 
 
+ 
 
 
-
- const filtroghibli = document.getElementById('filterdirector');
-
-filtroghibli.addEventListener('change',()=>{
-
-var selectdirector = filtroghibli.options[filtroghibli.selectedIndex].value
-
-console.log(selectdirector)
-
-let resultado = filtrodirector (dataghibli, selectdirector)
-displaydata(resultado)
-console.log(resultado)
+window.addEventListener('load', () => {
+  card(dataghibli)
 })
-  
-
-
-
-
-
- 
- /*  let pelishayao = dataghibli.filter(pelicula=> pelicula.director == "Hayao Miyazaki")
-  console.log (pelishayao) */
-  
- 
-
-
