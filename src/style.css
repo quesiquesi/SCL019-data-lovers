@@ -1,33 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&display=swap');
 
 .totoro{
-width: 90px;
-height: 100px;
-position: absolute; top:0; left: 0;
-transform: rotate(-180deg);
-  }
+  width: 90px;
+  height: 100px;
+  position: absolute; top:0; left: 0;
+  transform: rotate(-180deg);
+    }
+.navegador{
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  grid: fit-content;
+  justify-content: space-around;
+  padding-top:50px;   
+                                                                                                                                           
+               
+}
+p{
+  font-family: "Acme",sans-serif;
+  font-size: 20px;
+  line-height: 0;
+}
+#tarjeta{
+  font-size: 25px;
+  color: #f15d5d;
+  word-spacing: -1px;
+  margin: 0px;
+  margin-block-start: 0.6em;
+    margin-block-end: 0.6em;
+}
 button{
   background-color:transparent;
   outline: none;
   border:none;
-  font-family: 'Acme', sans-serif;  
+  
 }
 select{
   background-color:#fdf2b0;
   border-radius:10px;
-  padding:5px;
-  font-family: 'Acme';
+  padding:12px;
+  font-family: 'Acme', sans-serif;
 }
 #filterdirector{
-  position: absolute; top:100px; right:1000px;
-  font-family: 'Acme', sans-serif;
-  
+  position: relative; 
+
 }
 #filterScore{
 
-  position: absolute; top:100px; right: 1200px;
-  }
-  
+position: relative; 
+}
 #poster{
  flex-direction: row;
   row-gap: 30px;
@@ -36,10 +57,13 @@ select{
   padding-top: 100px;
   border-image:30px;
   display: flex;
-  flex-wrap: wrap; 
   justify-content: space-around;
+  flex-wrap: wrap; 
   column-gap:30px;
+ 
   align-items: center;
+  
+
  }
 
 img{
@@ -57,19 +81,19 @@ img{
   justify-content: center;
   text-align:end;
   padding: 30px 30px 30px;
+  padding-bottom: 10px;
   border-radius: 10px;
-  background-color: rgba(242, 241, 236, 0.8)
+  background-color: rgba(209, 242, 249, 0.8)
 }
 
 input{
   background-color: #fdf2b0;
   border-radius: 10px;
-  padding: 5px;
-  font-family: 'Acme', sans-serif;
+  padding: 12px;
 }
 
 .buscador{
-    position: absolute; top: 100px; right: 200px;
+    position: relative; 
     color:#d0bdcd;
     display: inline-block;
     border-radius: 10px;
@@ -81,43 +105,43 @@ input{
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 12px;
+  left: 160px;
   top: 50%;
   transform: translateY(-50%);
 }
 .btnbuscar{
-  position:absolute; top: 100px; right: 130px;
+  position:relative; 
   display: inline-block;
+  font-family: 'Acme', sans-serif;
 }
 
 h1{
-text-align: center;
-font-family:'Lobster', cursive; 
-font-size:60px;
 color: #f15d5d;
+text-align: center;
+font-family:'Lobster', cursive;
+font-size: 60px;
+margin:0%;
+
 
 }
 
 body{
+
 background-image: url("https://i.pinimg.com/originals/51/81/a3/5181a33c0955dee17b6e5752c09b9a3c.jpg");
 background-position: center;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
 background-color: #f2f1ec;
+
 }
 
-p{
 
- font-size: 20px;
- font-family: 'Acme', sans-serif;
- }
 
- .btnayuda{
-   position:fixed;
 
-   z-index:100;
-
- }
+/*.btnayuda{
+  position:absolute; bottom: 100px; right:80px;
+  display: inline-block;
+}
 
 
