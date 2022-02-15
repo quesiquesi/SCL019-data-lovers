@@ -1,6 +1,4 @@
-//import { example } from './data.js';
-
-import { filterDirectorGhibli, sortData } from './data.js';
+import { filterDirectorGhibli, sortData, buscarTitulo } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 let dataghibli = data.films
@@ -24,17 +22,22 @@ const card = (dataghibli) => {
     let imagen = document.createElement("img");
     let nombre = document.createElement("p");
     let puntaje = document.createElement("p");
+    let directorr = document.createElement("p");
 
     ficha.setAttribute("class", "fichita")
     imagen.setAttribute("src", dataghibli[i].poster);
     nombre.setAttribute("id", "tarjeta");
+    directorr.setAttribute("class")
     puntaje.innerHTML = "Valoración RT: " + dataghibli[i].rt_score;
     nombre.innerHTML = dataghibli[i].title;
+    directorr.innerHTML = dataghibli[i].director;
 
     ficha.appendChild(imagen);
     containerposter.appendChild(ficha);
     ficha.appendChild(nombre)
+    ficha.appendChild(directorr)
     ficha.appendChild(puntaje)
+    
 
 
 
@@ -76,8 +79,6 @@ selectScore.addEventListener('change', () => {
 
 
 })
-//console.log(selectScore)
-
 
 
 
@@ -86,75 +87,17 @@ window.addEventListener('load', () => {
 })
 
 
+//console.log(selectScore)
 
+//----------EVENTO BUSCADOR---------
+const buscador = document.getElementById ("buscador")
+buscador.addEventListener("keyup", (e) => {
 
+let searchByTitle= e.target.value;
+let searchFilm = buscarTitulo(searchByTitle, dataghibli);
+console.log(searchFilm);
+card(searchFilm)
 
-//function OrdenarScore() {
-  
-  /* let nuevoArray = [];
-  
-  for (let i = 0; i < dataghibli.length; i++) {
+});
 
-    let FilterScore = [dataghibli[i].rt_score]
-    //console.log(FilterScore);
-    var numero = FilterScore.map(i => Number(i));
-    console.log(numero);
-    var ArrayenString = numero.toString()
-    console.log(ArrayenString);
-
-    nuevoArray.push(dataghibli[i].rt_score);
-    
-  }
-  console.log(nuevoArray); */
-//}
-
-
-
-
-
-
-
-
-
-/* function ordenarScore(numero) {
-
-    for (let i = 0; i < numero.length - 1; i++) {
-
-      for (let j = 0; j < numero.length - i - 1; j++) {
-
-        if (numero[j] > numero[j + 1]) {
-
-          [numero[j], numero[j + 1]] = [numero[j + 1], numero[j]];          //ALGORITMO BURBUJA PARA ORDENAR UN ARRAY NUMÉRICO
-        }
-      }
-    }
-  }
-
-  let algoritmoBurbuja = ordenarScore(numero)
-  console.log(algoritmoBurbuja); */
-
-
-
-
-
-
-/* 
-for(let i=0;i<dataghibli.length;i++){
-                    
-  //document.getElementById("poster").innerHTML+=dataghibli[i].poster
-  let ficha = document.createElement ("flexbox");
-  let imagen = document.createElement("img");
-  let leyenda = document.createElement("p");
-  
-  let titulo= document.createTextNode (dataghibli[i].title);
-  
-
-  imagen.setAttribute("src",dataghibli[i].poster);
-  //titulo.setAttribute ("style");
-  
-  poster.appendChild(ficha)
-  poster.appendChild (imagen)
-  poster.appendChild(titulo)
-  
-} */
 

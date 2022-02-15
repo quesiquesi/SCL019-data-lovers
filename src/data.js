@@ -3,9 +3,8 @@
 
 export const filterDirectorGhibli = (dataghibli, valor) =>{  
   
-  
   const DirectoresGhibli= dataghibli.filter( directorGhibli=>(directorGhibli.director===valor ));
-  console.log(DirectoresGhibli);
+  
   return DirectoresGhibli;                                                               
   
 
@@ -31,22 +30,12 @@ export const sortData= (dataghibli) =>{
     return  orderDataScore
     
   }
-  
-  console.log(sortData)
 
+  //--------FUNCIÓN PARA BUSCAR POR NOMBRE DE PELICULA-----
 
-/* let pelishayao = dataghibli.filter(pelicula=> pelicula.director== "Hayao Miyazaki")
-console.log(pelishayao); */
-
-
-// estas funciones son de ejemplo
-
-/* export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};
- */
-
+  export const buscarTitulo = (searchByTitle, titulo) => {
+    let searchTitle = (titulo) =>titulo.title.toLowerCase().includes(searchByTitle.toLowerCase());
+    let searchSearch = titulo.filter(searchTitle);
+    return searchSearch;
+    
+  }
