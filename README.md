@@ -28,13 +28,13 @@ PARA: Familiarizarse con las películas de Studio Ghibli
 
 
 **CRITERIOS DE ACEPTACIÓN**
-*La usuaria puede visualizar el directorio de películas de studio Ghibli
-*Se muestra cada película con su título, póster, por quien fue dirigida y la puntuación en Rotten Tomatoes
+- La usuaria puede visualizar el directorio de películas de studio Ghibli
+- Se muestra cada película con su título, póster, por quien fue dirigida y la puntuación en Rotten Tomatoes
 
 **DEFINICIÓN DE TERMINADO**
-*Crear html y css como estructura de la página web
-*Extraer la data de las películas e importarla al main.js
-*Visualizar la data en la interfaz del directorio
+- Crear html y css como estructura de la página web
+- Extraer la data de las películas e importarla al main.js
+- Visualizar la data en la interfaz del directorio
 
 ### HISTORIA DE USUARIA 2
 
@@ -44,14 +44,14 @@ PARA: Escoger una película para ver
 
 
 **CRITERIOS DE ACEPTACIÓN**
-*La usuaria puede visualizar una barra de navegación que contiene un menú desplegable 
-*La usuaria puede acceder al menú desplegable
-*La usuaria puede seleccionar la opción de su preferencia para ordenar las películas de manera ascendente o descendente.
+- La usuaria puede visualizar una barra de navegación que contiene un menú desplegable 
+- La usuaria puede acceder al menú desplegable
+- La usuaria puede seleccionar la opción de su preferencia para ordenar las películas de manera ascendente o descendente.
 
 **DEFINICIÓN DE TERMINADO**
-*Crear elemento nav que contenga un select con dos opciones seleccionables
-*Crear la función de sorting en el data.js
-*Ligar la función a un evento ‘change’ en el main.js
+- Crear elemento nav que contenga un select con dos opciones seleccionables
+- Crear la función de sorting en el data.js
+- Ligar la función a un evento ‘change’ en el main.js
 
 
 ### HISTORIA DE USUARIA 3
@@ -62,15 +62,15 @@ PARA: Familiarizarse con la filmografía de un director en específico
 
 
 **CRITERIOS DE ACEPTACIÓN**
-*La usuaria puede visualizar una barra de navegación que contiene un menú desplegable
-*La usuaria puede desplegar las opciones con los nombres de todos los directores
-*La usuaria puede filtrar las películas según director
+- La usuaria puede visualizar una barra de navegación que contiene un menú desplegable
+- La usuaria puede desplegar las opciones con los nombres de todos los directores
+- La usuaria puede filtrar las películas según director
 
 
 **DEFINICIÓN DE TERMINADO**
-*Agregar un select con los directores al elemento nav creado en el index.html
-*Crear la función de filtrado en el data.js
-*Ligar la función a un evento el main.js
+- Agregar un select con los directores al elemento nav creado en el index.html
+- Crear la función de filtrado en el data.js
+- Ligar la función a un evento el main.js
 
 ### HISTORIA DE USUARIA 4
 
@@ -80,14 +80,14 @@ PARA: Visualizar información sobre la película
 
 
 **CRITERIOS DE ACEPTACIÓN**
-*La usuaria puede visualizar una barra de navegación que contiene una barra buscadora
-*La usuaria puede tipear el título de su preferencia
-*La usuaria puede visualizar las películas filtradas
+- La usuaria puede visualizar una barra de navegación que contiene una barra buscadora
+- La usuaria puede tipear el título de su preferencia
+- La usuaria puede visualizar las películas filtradas
 
 **DEFINICIÓN DE TERMINADO**
-*Se agrega un input tipo search al elemento nav en el index.html
-*Se crea la función en el data.js
-*Se liga la función a un evento ‘keyup’ en el main.js
+- Se agrega un input tipo search al elemento nav en el index.html
+- Se crea la función en el data.js
+- Se liga la función a un evento ‘keyup’ en el main.js
 
 
 
