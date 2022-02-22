@@ -19,7 +19,7 @@ Utilizamos un set de datos de Studio Ghibli, del cual seleccionamos información
 
 ## 2. Historia de usuaria
 
-HISTORIA DE USUARIA 1.-
+**HISTORIA DE USUARIA 1.-**
 
 En base a los resultados obtenidos de la investigación facilitada por Laboratoria, logramos definir una historia de usuaria para desarrollar la página web:
 
@@ -29,70 +29,64 @@ QUIERO: Conocer cuáles son las animaciones de Studio Ghibli
 PARA: Familiarizarse con las películas de Studio Ghibli
 
 
-CRITERIOS DE ACEPTACIÓN:
-
+_CRITERIOS DE ACEPTACIÓN:_
 *La usuaria puede visualizar el directorio de películas de studio Ghibli
 *Se muestra cada película con su título, póster, por quien fue dirigida y la puntuación en Rotten Tomatoes
 
-DEFINICIÓN DE TERMINADO
-
+_DEFINICIÓN DE TERMINADO_
 *Crear html y css como estructura de la página web
 *Extraer la data de las películas e importarla al main.js
 *Visualizar la data en la interfaz del directorio
 
-HISTORIA DE USUARIA 2
+**HISTORIA DE USUARIA 2**
 
 YO COMO: Aficionada de Studio Ghibli
 QUIERO: Ordenar las películas por valoración en Rotten Tomatoes
 PARA: Escoger una película para ver
 
 
-CRITERIOS DE ACEPTACIÓN
-
+_CRITERIOS DE ACEPTACIÓN_
 *La usuaria puede visualizar una barra de navegación que contiene un menú desplegable 
 *La usuaria puede acceder al menú desplegable
 *La usuaria puede seleccionar la opción de su preferencia para ordenar las películas de manera ascendente o descendente.
 
-DEFINICIÓN DE TERMINADO
-
+_DEFINICIÓN DE TERMINADO_
 *Crear elemento nav que contenga un select con dos opciones seleccionables
 *Crear la función de sorting en el data.js
 *Ligar la función a un evento ‘change’ en el main.js
 
 
-HISTORIA DE USUARIA 3 
+**HISTORIA DE USUARIA 3** 
 
 YO COMO: Fan del Studio Ghibli
 QUIERO: Filtrar las películas según director
 PARA: Familiarizarse con la filmografía de un director en específico
 
 
-CRITERIOS DE ACEPTACIÓN
+_CRITERIOS DE ACEPTACIÓN_
 *La usuaria puede visualizar una barra de navegación que contiene un menú desplegable
 *La usuaria puede desplegar las opciones con los nombres de todos los directores
 *La usuaria puede filtrar las películas según director
 
 
-DEFINICIÓN DE TERMINADO
-
+_DEFINICIÓN DE TERMINADO_
 *Agregar un select con los directores al elemento nav creado en el index.html
 *Crear la función de filtrado en el data.js
 *Ligar la función a un evento el main.js
 
-HISTORIA DE USUARIA 4
+**HISTORIA DE USUARIA 4**
 
 YO COMO: Aficionada de Studio Ghibli
 QUIERO: Buscar una película por título
 PARA: Visualizar información sobre la película
 
 
-CRITERIOS DE ACEPTACIÓN
-
+_CRITERIOS DE ACEPTACIÓN_
 *La usuaria puede visualizar una barra de navegación que contiene una barra buscadora
 *La usuaria puede tipear el título de su preferencia
 *La usuaria puede visualizar las películas filtradas
 
-DEFINICIÓN DE TERMINADO
+_DEFINICIÓN DE TERMINADO_
 *Se agrega un input tipo search al elemento nav en el index.html
 *Se crea la función en el data.js
 *Se liga la función a un evento ‘keyup’ en el main.js
