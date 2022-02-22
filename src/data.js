@@ -1,7 +1,7 @@
 //------FUNCIÓN PARA FILTRAR POR DIRECTOR------
 
 export const filterDirectorGhibli = (dataghibli, valor) =>{  
-   const DirectoresGhibli = dataghibli.filter( directorGhibli=>(directorGhibli.director===valor ));
+   const DirectoresGhibli = dataghibli.filter( film=>(film.director===valor ));
   return DirectoresGhibli;                                                               
   
 
@@ -36,6 +36,7 @@ export const sortData= (dataghibli) =>{
     
   }
 
+ 
 
 
 

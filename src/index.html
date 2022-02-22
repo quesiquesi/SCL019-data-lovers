@@ -10,27 +10,39 @@
 <header>
 
   <img src="https://cdn140.picsart.com/271305244008211.png" class="totoro">
- <h1>Directorio Ghibli</h1> 
-
+  <h1>Directorio Ghibli</h1>
 
 </header>
-<nav> <div class="navegador">
-  <select name="filterScore" id="filterScore">
-    <option value="selecciona" option disabled selected>Valoración</option>
-    <option value="ascendente">Ascendente</option>
-    <option value="descendente">Descendente</option>
-  </select>
+<nav>
+  <div class="navegador">
 
-  <select name="filterdirector" id="filterdirector" >
-    <option value="d0" option disabled selected>Directores</option>
-    <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-    <option value="Isao Takahata">Isao Takahata</option>
-    <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
-    <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-    <option value="Gorō Miyazaki">Gorō Miyazaki</option>
-    <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-  </select>
+    <select name="filterScore" id="filterScore">
+      <option value="selecciona" option disabled selected>Valoración</option>
+      <option value="ascendente">Ascendente</option>
+      <option value="descendente">Descendente</option>
+    </select>
 
+    <select name="filterdirector" id="filterdirector">
+      <option value="d0" option disabled selected>Directores</option>
+      <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+      <option value="Isao Takahata">Isao Takahata</option>
+      <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+      <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+      <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+      <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+    </select>
+
+    <div class="buscador" id="buscador">
+      <input type="search" placeholder="      Busca por título       ">
+      <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+          clip-rule="evenodd" />
+      </svg>
+      <input class="btnbuscar" type="submit" value="Buscar">
+    </div>
+
+<<<<<<< HEAD
   <div class="buscador" id="buscador"><input type="search" placeholder="      Busca por título       ">  <svg xmlns="http://www.w3.org/2000/svg"
     class="input-icon" viewBox="0 0 20 20" fill="currentColor">
     <path fill-rule="evenodd"
@@ -38,23 +50,23 @@
       clip-rule="evenodd" />
   </svg>
     <input id="buscar" class="btnbuscar" type="submit" value="Buscar">
+=======
+>>>>>>> 38518ebe1d60b7621b852b863ed7150c5927983b
   </div>
-  
-</div>
 </nav>
 
 <body>
-  
+
   <div id="poster"></div>
   <div id="root"></div>
   <div class="btnayuda"><button type="button" onclick="document.location='----'">¿Necesitas
-    ayuda?</button></div>
+      ayuda?</button></div>
   <script src="main.js" type="module"></script>
-  
+
 </body>
 
 <footer>
-  
+
 </footer>
 
 </html>
