@@ -51,7 +51,7 @@ window.addEventListener('load', () => {
 const selectDirectores = document.getElementById('filterdirector');
 
 selectDirectores.addEventListener('change', () => {
-  var opcionDirector = selectDirectores.options[selectDirectores.selectedIndex].value;
+  var opcionDirector = selectDirectores.value;
   console.log(opcionDirector)
 
   let resultado = filterDirectorGhibli(dataghibli, opcionDirector)
@@ -65,7 +65,7 @@ selectDirectores.addEventListener('change', () => {
 const selectScore = document.getElementById('filterScore');
 
 selectScore.addEventListener('change', () => {
-  var opcionScore = selectScore.options[selectScore.selectedIndex].value;
+  var opcionScore = selectScore.value;
   let sorted = sortData(dataghibli,opcionScore)
   
   if(opcionScore ==="ascendente"){
@@ -79,9 +79,9 @@ selectScore.addEventListener('change', () => {
 
 //----------EVENTO BUSCADOR---------
 const buscador = document.getElementById ("buscador")
-buscador.addEventListener("keyup", (e) => {
+buscador.addEventListener("keyup", (evento) => {
 
-  let searchByTitle = e.target.value;
+  let searchByTitle = evento.target.value;
   let searchfilm = buscarTitulo (searchByTitle,dataghibli)
   console.log(searchfilm)
   card(searchfilm)
