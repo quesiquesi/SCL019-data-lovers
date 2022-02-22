@@ -19,13 +19,6 @@ Utilizamos un set de datos de Studio Ghibli, del cual seleccionamos información
 
 ## 2. Historia de usuaria
 
-DEFINICIÓN DEL PRODUCTO.-
-
-Directorio Ghibli es una página web dirigida a usuarias interesadas en obtener información sobre películas creadas por Studio Ghibli.
-
-Utilizamos un set de datos de Studio Ghibli, del cual seleccionamos información para extraer y visualizar, para que luego la usuaria pueda filtrar y realizar búsquedas en la página web según sus necesidades.
-
-
 HISTORIA DE USUARIA 1.-
 
 En base a los resultados obtenidos de la investigación facilitada por Laboratoria, logramos definir una historia de usuaria para desarrollar la página web:
@@ -107,12 +100,10 @@ DEFINICIÓN DE TERMINADO
 
 
 ## 3. Prototipo de baja fidelidad
-
-![Prototipo-baja-fidelidad](src/img/prototipo baja fidelidad.jpeg)
+![Prototipo-baja-fidelidad](src/img/prototipo-baja-fidelidad.jpeg)
 
 ## 4. Alta fidelidad
-
-![Prototipo-alta-fidelidad](src/img/prototipo de alta fidelidad.jpeg)
+![Prototipo-alta-fidelidad](src/img/prototipo-de-alta-fidelidad.jpeg)
 
 ## 5. Interfaz en distintos dispositivos moviles
 ![interfaz-laptop](src/img/computador.jpeg)
