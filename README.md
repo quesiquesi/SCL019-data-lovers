@@ -94,12 +94,21 @@ _DEFINICIÓN DE TERMINADO_
 
 
 ## 3. Prototipo de baja fidelidad
-![Prototipo-baja-fidelidad](src/img/prototipo-baja-fidelidad.jpeg)
+![Prototipo-baja-fidelidad](src/img/prototipobajafidelidad.jpeg)
 
 ## 4. Alta fidelidad
-![Prototipo-alta-fidelidad](src/img/prototipo-de-alta-fidelidad.jpeg)
+![Prototipo-alta-fidelidad](src/img/prototipodealtafidelidad.jpeg)
 
 ## 5. Interfaz en distintos dispositivos moviles
+
+_Interfaz laptop_
+
 ![interfaz-laptop](src/img/computador.jpeg)
+
+_Interfaz tablet_
+
 ![interfaz-tablet](src/img/tablet.jpeg)
+
+_Interfaz celular_
+
 ![interfaz-celular](src/img/celular.jpeg)
