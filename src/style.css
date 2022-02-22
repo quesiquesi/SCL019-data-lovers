@@ -1,18 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&display=swap');
-.navegador{
-  position:relative;
-  flex-direction: row;
-  display:flex;
-  justify-content: space-around;
-  grid:fit-content 40%;
-}
-header{
-font-family: 'Carter One', fantasy;
-}
 
+.totoro{
+  width: 90px;
+  height: 100px;
+  position: absolute; top:0; left: 0;
+  transform: rotate(-180deg);
+    }
+.navegador{
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  grid: fit-content;
+  justify-content: space-around;
+  padding-top:50px;   
+                                                                                                                                           
+               
+}
 p{
   font-family: "Acme",sans-serif;
   font-size: 20px;
+  line-height: 0;
+}
+#tarjeta{
+  font-size: 25px;
+  color: #f15d5d;
+  word-spacing: -1px;
+  margin: 0px;
+  margin-block-start: 0.6em;
+    margin-block-end: 0.6em;
 }
 button{
   background-color:transparent;
@@ -23,15 +38,16 @@ button{
 select{
   background-color:#fdf2b0;
   border-radius:10px;
-  padding:3px;
+  padding:12px;
+  font-family: 'Acme', sans-serif;
 }
 #filterdirector{
-  position: relative; /* top:100px; right:1200px; */
+  position: relative; 
 
 }
 #filterScore{
 
-position: relative; /* top:100px; right: 1400px; */
+position: relative; 
 }
 #poster{
  flex-direction: row;
@@ -41,6 +57,7 @@ position: relative; /* top:100px; right: 1400px; */
   padding-top: 100px;
   border-image:30px;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap; 
   column-gap:30px;
   justify-content: space-around;
@@ -65,6 +82,7 @@ img{
   justify-content: center;
   text-align:end;
   padding: 30px 30px 30px;
+  padding-bottom: 10px;
   border-radius: 10px;
   background-color: rgba(209, 242, 249, 0.8)
 }
@@ -72,14 +90,15 @@ img{
 input{
   background-color: #fdf2b0;
   border-radius: 10px;
-  padding: 3px;
+  padding: 12px;
 }
 
 .buscador{
-    position: relative; /* top: 100px; right: 200px; */
+    position: relative; 
     color:#d0bdcd;
     display: inline-block;
     border-radius: 10px;
+    font-family: 'Acme', sans-serif;
     
 }
 .input-icon {
@@ -87,20 +106,23 @@ input{
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 150px;
+  left: 160px;
   top: 50%;
   transform: translateY(-50%);
 }
 .btnbuscar{
-  position:relative; /* top: 100px; right: 130px; */
+  position:relative; 
   display: inline-block;
+  font-family: 'Acme', sans-serif;
 }
 
 h1{
 color: #f15d5d;
 text-align: center;
 font-family:'Lobster', cursive;
-font-size: 100 px;
+font-size: 60px;
+margin:0%;
+
 
 }
 
@@ -123,7 +145,4 @@ background-color: #f2f1ec;
   display: inline-block;
 }
 
-text{
 
-  font-size: 30px;
-}

@@ -1,4 +1,4 @@
-import { describe } from 'eslint/lib/rule-tester/rule-tester';
+import { describe, it } from 'eslint/lib/rule-tester/rule-tester';
 import {filterDirectorGhibli, sortData, buscarTitulo} from '../src/data.js';
 
 //data para probar los test:
@@ -32,8 +32,7 @@ describe('filterDirectorGhibli', () => {
     expect(directordata[0].director).toBe("Hayao Miyazaki");
   })
 })
-//------------TEST SORT POR VALORACIÓN-----------------
-
+//TEST SORT POR VALORACIÓN
 describe('sortData', () =>{
   it('es una función', ()=>{
     expect(typeof sortData).toBe('function')
@@ -45,17 +44,20 @@ describe('sortData', () =>{
   })
 })
 
-//----------------TEST BUSCADOR----------------------
+//TEST BARRA BUSCADORA
 
-
-describe('buscarTitulo', () => {
-
-  it('es una función', () => {
-    expect(typeof buscarTitulo).toBe('function');
-  });
-
+describe('buscarTitulo', () =>{
+  it('es una función',()=>{
+    expect(typeof buscarTitulo).toBe('function')
+  })
   it('return `My Neighbor Totoro`', () => {
     expect(buscarTitulo("My Neighbor Totoro", datadatadata)).toEqual([
       {"title": "My Neighbor Totoro", "director": "Hayao Miyazaki", "rt_score": "93"}]);
-    });
-  });
+  })
+  
+})
+
+
+/* it('Debería retornar el título de la película que coincida con lo tipeado en el buscador[My Neighbor Totoro]', () =>{
+  let buscadordata = buscarTitulo(datadatadata,"My Neighbor Totoro")
+  expect(buscadordata[0].title).toEqual('My Neighbor Totoro') */

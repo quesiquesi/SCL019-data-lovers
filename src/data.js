@@ -1,10 +1,7 @@
-
 //------FUNCIÓN PARA FILTRAR POR DIRECTOR------
 
 export const filterDirectorGhibli = (dataghibli, valor) =>{  
-  
-  const DirectoresGhibli= dataghibli.filter( directorGhibli=>(directorGhibli.director===valor ));
-  
+   const DirectoresGhibli = dataghibli.filter( film=>(film.director===valor ));
   return DirectoresGhibli;                                                               
   
 
@@ -14,8 +11,7 @@ export const filterDirectorGhibli = (dataghibli, valor) =>{
 
 export const sortData= (dataghibli) =>{  
 
-  //const orderDataScore= []
-
+ 
   let orderDataScore = dataghibli.sort(function (a, b) {
 
     if (parseInt(a.rt_score, 10) > parseInt(b.rt_score, 10)) {
@@ -30,7 +26,7 @@ export const sortData= (dataghibli) =>{
     return  orderDataScore
     
   }
-
+  
   //--------FUNCIÓN PARA BUSCAR POR NOMBRE DE PELICULA-----
 
   export const buscarTitulo = (searchByTitle, titulo) => {
@@ -39,3 +35,23 @@ export const sortData= (dataghibli) =>{
     return searchSearch;
     
   }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
