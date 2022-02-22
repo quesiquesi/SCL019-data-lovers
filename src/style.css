@@ -60,7 +60,8 @@ position: relative;
   justify-content: space-around;
   flex-wrap: wrap; 
   column-gap:30px;
- 
+  justify-content: space-around;
+
   align-items: center;
   
 
